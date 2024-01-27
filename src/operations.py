@@ -1,0 +1,3 @@
+def get_last_5_executed_operations():
+    """Return last five executed operations sorted by datetime descending order"""
+    ...
