@@ -16,4 +16,4 @@ def get_masked_card_number(card_num: str):
 
 def get_masked_account_number(account_num: str):
     """masked account number in format **XXXX"""
-    return f"**{account_num[-4:]}"
+    return f"**{account_num[-4:]}" if account_num else ""

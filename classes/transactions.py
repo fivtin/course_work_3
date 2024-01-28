@@ -33,10 +33,10 @@ class Transaction:
 
 
 class ExecutedTransactionsList:
-    """"""
+    """class implements loading executed transactions from file and sorting by dates"""
 
     def __init__(self):
-        """"""
+        """loading and sorting transactions"""
         self._transactions = list()
         for operation in load_from_file():
             transaction = Transaction(operation)
@@ -47,4 +47,5 @@ class ExecutedTransactionsList:
 
     @property
     def transactions(self):
+        """hide list of transaction from direct access"""
         return self._transactions
